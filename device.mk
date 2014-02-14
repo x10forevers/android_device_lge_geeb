@@ -14,8 +14,8 @@
 # limitations under the License.
 #
 
-# This file includes all definitions that apply to ALL geehrc devices, and
-# are also specific to gee devices
+# This file includes all definitions that apply to ALL gee devices, and
+# are also specific to geeb devices
 #
 # Everything in this directory will become public
 
@@ -31,9 +31,3 @@ $(call inherit-product, device/lge/gee-common/gee-common.mk)
 #NFC firmware
 PRODUCT_COPY_FILES += \
     device/lge/geeb/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so
-
-# Telephony Properties
-PRODUCT_PROPERTY_OVERRIDES += \
-    telephony.lteOnCdmaDevice=0 \
-    ro.telephony.default_network=9 \
-    telephony.lteOnGsmDevice=1
