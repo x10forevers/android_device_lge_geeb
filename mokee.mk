@@ -1,5 +1,5 @@
 ## Specify phone tech before including full_phone
-$(call inherit-product, vendor/mk/config/common_gsm.mk)
+$(call inherit-product, vendor/mk/config/gsm.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
@@ -9,7 +9,7 @@ TARGET_SCREEN_WIDTH := 768
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/mk/config/common_phone.mk)
+$(call inherit-product, vendor/mk/config/common_full_phone.mk)
 
 # Enhanced NFC
 # $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
